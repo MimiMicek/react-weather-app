@@ -1,51 +1,35 @@
 import React from 'react';
 
 export default class WeatherForm extends React.Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            cityName: "",
-            countryName: ""
-        }
-    }
-    
-    handleChange = (event) => {
-        this.setState({[event.target.id]: event.target.value});
-    }
-
-    onSubmit = () => {
-        const { cityName, countryName } = this.state;
-
-        
-        console.log(`city ${cityName}.`);
-        console.log(`country ${countryName}.`);
-
-
-        this.props.onSearchSubmit({cityName, countryName});
-    }
-
+   
     render(){
-        const { cityName, countryName } = this.state;
      
         return(
-            <div>
-                <input  id="cityName" 
-                        placeholder="Enter city . . ."
-                        onChange={this.handleChange}
-                        value={cityName}
-                        />
-                <br/>
-                <br/>
-                <input  id="countryName" 
-                        placeholder="Enter country . . ."
-                        onChange={this.handleChange}
-                        value={countryName}
-                        />
-                <br/>
-                <br/>
-                <button onClick={this.onSubmit}>Submit</button>
-
-            </div>
+            <div className="container-fluid">
+                <form onSubmit={this.props.getWeather} className="form-group row m-3">
+                    <div className="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-3">
+                        <label htmlFor="cityName">City</label>
+                        <input  className="form-control"
+                                type="text" 
+                                id="cityName"
+                                name="city" 
+                                placeholder="Enter city . . ."
+                                />
+                    </div>
+                    <div className="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12 mb-5">
+                        <label htmlFor="countryName">Country</label>
+                        <input  className="form-control"
+                                type="text"
+                                id="countryName"
+                                name="country" 
+                                placeholder="Enter country . . ."
+                                />
+                    </div>
+                    <div className="form-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                        <button className="btn btn-success btn-absolute-center">Search</button>
+                    </div>
+                </form>
+            </div>       
         )
     }
 }
