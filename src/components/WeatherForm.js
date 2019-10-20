@@ -26,7 +26,7 @@ export default class WeatherForm extends React.Component{
                                 />
                     </div>
                     <div className="form-group col-lg-3 col-md-6 col-sm-12 col-xs-12">
-                        <button className="btn btn-success btn-absolute-center">Search</button>
+                        <button className="btn btn-info btn-absolute-center">Search</button>
                     </div>
                 </form>
             </div>       

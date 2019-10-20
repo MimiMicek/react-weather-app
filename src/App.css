@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600&display=swap');
+
+
+body {
+  font-family: 'Hepta Slab', serif !important;
+  color: white !important;
+}
+
+.wrapper {
+  background: linear-gradient(to left, #D6FFF6, #F79F79, #05668D );
+  height: -webkit-fill-available;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 0;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.form-container {
+  background: #17a2b8;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  white-space: nowrap;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+input[type="text"] {
+  background-color: transparent;
+  border: 0;
+  color: #17a2b8 !important;
+  border-bottom: solid 2px #dbd8d2;
+  padding-bottom: 4px;
+  margin-bottom: 30px;
+  margin-right: 20px;
+}
+
+.home{
+  text-align: center;
+  padding-top: 100px;
+}
+
+.homePage{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  display: inline-block;
+}
+
+.errorMsg{
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  white-space: nowrap;
+}
+
+.iconStyle{
+  font-size: 100px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+
+.sunIcon{
+  font-size: 300px;
+  color: yellow;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: 9;
+  animation-direction: reverse;  
+
+}
+
+.rainIcon{
+  color: gray;
+  font-size: 250px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 6; /* Safari 4.0 - 8.0 */
+  animation-name: example2;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+}
+
+.cloudIcon{
+  font-size: 250px;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  position: relative;
+  width: 100px;
+  height: 100px;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 3; /* Safari 4.0 - 8.0 */
+  animation-name: example3;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {left:400px; top:0px;}
+  25%  {left:500px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:100px; top:200px;}
+  100% {left:0px; top:0px;}
+}
+
+@keyframes example2 {
+  0%   {left:900px; top:100px;}
+  25%  {right:200px; top:100px;}
+  50%  {left:500px; top:200px;}
+  75%  {right:100px; top:100px;}
+  100% {right:0px; top:0px;}
+}
+
+
+@keyframes example3 {
+  0%   {right:300px; top:100px;}
+  25%  {right:600px; top:50px;}
+  50%  {right:300px; top:200px;}
+  75%  {right:100px; top:20px;}
+  100% {right:0px; top:0px;}
+}

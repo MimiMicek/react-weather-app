@@ -8,7 +8,7 @@ export default class WeatherPage extends React.Component{
 
         return(
             <div className="container">
-                <div className="row">
+                <div className="row pl-1">
                     <div className="col">
                         {
                             city && country && <p>Location: {city}, {country}</p>
@@ -25,10 +25,14 @@ export default class WeatherPage extends React.Component{
                         }
                     </div>
                 </div>
-                {
-                    error && <p>{error}</p>
-                }
-                <div className="row">
+                <div className="row pl-1">
+                    <div className="col">
+                    {
+                        error && <p>{error}</p>
+                    }
+                    </div>
+                </div>
+                <div className="row pl-1">
                 
                     <div className="col">
                         {
